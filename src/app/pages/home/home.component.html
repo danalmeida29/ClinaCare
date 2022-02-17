@@ -1,0 +1,146 @@
+<div class= "container">
+  
+  <div class="secao">
+
+    
+    <p class="title">Nossas salas disponíveis agora.</p>
+    <p class="sub-title">Todas as nossas salas estão localizadas em São Paulo - Bela Vista, Rua Itapeva, 490 Sala68 - CEP: 01332-000.</p>
+
+    <mat-form-field class="example-form-field" appearance="fill">
+      <mat-label>First campaign</mat-label>
+      <mat-date-range-input
+        [formGroup]="campaignOne"
+        [rangePicker]="campaignOnePicker"
+        [comparisonStart]="campaignTwo.value.start"
+        [comparisonEnd]="campaignTwo.value.end">
+        <input matStartDate placeholder="Start date" formControlName="start">
+        <input matEndDate placeholder="End date" formControlName="end">
+      </mat-date-range-input>
+      <mat-datepicker-toggle matSuffix [for]="campaignOnePicker"></mat-datepicker-toggle>
+      <mat-date-range-picker #campaignOnePicker></mat-date-range-picker>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+
+      <mat-label>Horario</mat-label>
+      <mat-select disableRipple>
+        <mat-option value="1">Manhã das 8h ás 12h</mat-option>
+        <mat-option value="2">Tarde das 12h ás 18h</mat-option>
+        <mat-option value="3">noite das 18h ás 22h</mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+
+    <mat-form-field appearance="fill">
+
+      <mat-label>Todos os Planos</mat-label>
+      <mat-select disableRipple>
+        <mat-option value="1">Horas Avulsas</mat-option>
+        <mat-option value="2">Horas Semanais</mat-option>
+        <mat-option value="3">Horas Mensais</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+  </div>
+
+  <hr />
+
+  
+  <div class="row">
+    <div class="col-sm-4">
+
+      <mat-card class="card">
+        <img mat-card-image src="/assets/ofertas/1/Mask Group 6.png">
+        <mat-card-header>
+          <mat-card-title>Sala Roxa </mat-card-title>
+          <mat-card-subtitle>Localização: Bela Vista</mat-card-subtitle>
+        </mat-card-header>
+        
+        <mat-card-content>
+
+          <mat-chip-list aria-label="Fish selection">
+            <mat-chip>One fish</mat-chip>
+            <mat-chip>Two fish</mat-chip>
+
+            <p>Ideal para</p> <hr/>
+
+            <mat-chip color="primary" selected>Primary fish</mat-chip>
+            <mat-chip color="accent" selected>Accent fish</mat-chip>
+          </mat-chip-list>
+
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button class="sendButton">Reservar</button>
+        </mat-card-actions>
+      </mat-card>
+
+    </div>
+
+    <hr/>
+
+    <div class="col-sm-4">
+
+      <mat-card class="card">
+        <img mat-card-image src="/assets/ofertas/2/sala 2.png" >
+
+        <mat-card-header>
+          <mat-card-title>Sala azul</mat-card-title>
+          <mat-card-subtitle>Localização: Bela Vista</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+
+          <mat-chip-list aria-label="Fish selection">
+            <mat-chip>One fish</mat-chip>
+            <mat-chip>Two fish</mat-chip>
+
+            <p>Ideal para</p> <hr/>
+
+            <mat-chip color="primary" selected>Primary fish</mat-chip>
+            <mat-chip color="accent" selected>Accent fish</mat-chip>
+          </mat-chip-list>
+
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button class="sendButton">Reservar</button>
+        </mat-card-actions>
+      </mat-card>
+
+    </div>
+
+    <hr/>
+
+    <div class="col-sm-4">
+
+      <mat-card class="card">
+        <img mat-card-image src="/assets/ofertas/3/sala 3.png" >
+
+        <mat-card-header>
+          <mat-card-title>Sala Verde</mat-card-title>
+          <mat-card-subtitle>Localização: Bela Vista</mat-card-subtitle>
+        </mat-card-header>
+    
+        <mat-card-content>
+          
+          <mat-chip-list aria-label="Fish selection">
+            <mat-chip>One fish</mat-chip>
+            <mat-chip>Two fish</mat-chip>
+
+            <div>Ideal para</div> 
+
+            <mat-chip color="primary" selected>Primary fish</mat-chip>
+            <mat-chip color="accent" selected>Accent fish</mat-chip>
+          </mat-chip-list>
+
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button class="sendButton">Reservar</button>
+        </mat-card-actions>
+      </mat-card>
+
+    </div>
+
+  </div>
+  <hr />
+  
+</div>
